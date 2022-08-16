@@ -1,0 +1,10 @@
+php artisan make:migration create_products_table --create=products table yaratish
+  Schema::create('products', function (Blueprint $table) {
+            $table->id();
+            $table->string('title');
+            $table->integer('price');
+            $table->boolean('in_stock');
+            $table->text('description');
+            $table->timestamps();
+        });
+php artisan make:migration create_new_price_to_products_table --create=products yangi new price ustunini qoshish
