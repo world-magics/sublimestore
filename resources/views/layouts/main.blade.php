@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Sublime</title>
+<title>@yield('title')</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Sublime project">
@@ -98,7 +98,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- Search Panel -->
 		<div class="search_panel trans_300">
 			<div class="container">
@@ -130,7 +130,7 @@
 	<div class="menu menu_mm trans_300">
 		<div class="menu_container menu_mm">
 			<div class="page_menu_content">
-							
+
 				<div class="page_menu_search menu_mm">
 					<form action="#">
 						<input type="search" required="required" class="page_menu_search_input menu_mm" placeholder="Search for products...">
@@ -174,13 +174,13 @@
 			</ul>
 		</div>
 	</div>
-	
+
 	<!-- Home -->
 
 	@yield('content')
 
 	<!-- Footer -->
-	
+
 	<div class="footer_overlay"></div>
 	<footer class="footer">
 		<div class="footer_background" style="background-image:url(images/footer.jpg)"></div>
