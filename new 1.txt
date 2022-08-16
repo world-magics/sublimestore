@@ -1,3 +1,22 @@
+2)How to download composer you can see by this link https://www.youtube.com/watch?v=tb8b7...
+2)Download Zip File from Github and extract It
+3)Open Project In VSC and Open integrated terminal
+4)Run "composer update"
+5)Rename .env.example to .env
+6)Run "php artisan key:generate"
+7)Set Database name as you like
+8)Set Mail
+9)Run XAMPP and open link "http://localhost/phpmyadmin/" and create database
+10)Run "php artisan migrate"
+11)Run "php artisan serve"
+
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=465
+MAIL_USERNAME=example@gmail.com
+MAIL_PASSWORD=password
+MAIL_ENCRYPTION=ssl
+
 php artisan make:migration create_products_table --create=products table yaratish
   Schema::create('products', function (Blueprint $table) {
             $table->id();
